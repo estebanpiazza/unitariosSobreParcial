@@ -1,0 +1,64 @@
+Pregunta 1
+3
+puntos
+Implementa una función que reciba dos parámetros:
+
+Una lista de canciones TOP5: esta lista contiene exactamente 5 canciones que representan las más escuchadas del mes. Todas las canciones en esta lista son distintas entre sí.
+Una lista de reproducción de un usuario: contiene un número arbitrario de canciones, que pueden o no estar en la lista del TOP5.
+La función debe realizar las siguientes tareas:
+
+Imprimir por pantalla cada canción de la lista de reproducción, mostrando su número de orden dentro de la lista. Por ejemplo, la primera canción tendrá el número 1, la segunda el número 2, y así sucesivamente. (0.5 pto)
+Después imprimir cada tres canciones de la lista de reproducción que no hayan sido escuchadas previamente en esa misma lista, se debe mostrar un mensaje que diga: "Espacio publicitario". Es decir, si una canción ya se repitió en la lista de reproducción, no cuenta para el conteo de tres.(1 pto)
+Ejemplo:
+
+ Si las canciones 1, 2 y 3 no se repiten en la lista, después de la canción 3 se debe imprimir el espacio publicitario. Si una canción ya apareció anteriormente, no se cuenta para el espacio publicitario.
+
+Imprimir cuál es la canción que más se repite en la lista de reproducción del usuario. Si hay más de una canción con la misma cantidad de repeticiones, mostrar al menos una de ellas.(1 pto)
+Retornar el porcentaje de canciones del TOP5 que aparecen en ambas listas, es decir, que también están en la lista de reproducción del usuario. (0.5)
+Recuerda que una función puede llamar funciones dentro de ella.
+
+
+
+Ejemplo:
+
+
+
+Lista TOP5 = [“cancion1”, “cancion2”, “cancion3”, “cancion4”, “cancion5”]
+
+
+
+Lista de reproducción = [ “cancion1”, “cancion2”, “cancion3”, “cancion1”, “cancion6”, “cancion7”, “cancion8”, “cancion1” ]
+
+
+
+La función debe imprimir:
+
+
+
+Se está escuchando cancion1 en orden 1
+
+Se está escuchando cancion2 en orden 2
+
+Se está escuchando cancion3 en orden 3
+
+Espacio publicitario
+
+Se está escuchando cancion1 en orden 4
+
+Se está escuchando cancion6 en orden 5
+
+Se está escuchando cancion7 en orden 6
+
+Se está escuchando cancion8 en orden 7
+
+Espacio publicitario
+
+Se está escuchando cancion1 en orden 8
+
+
+
+La canción más escuchada es: cancion1
+
+
+
+La función debe retornar: 60
